@@ -1,0 +1,1427 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-tint": "#545f73", "on-primary-container": "#8590a6", "on-error-container": "#93000a", "secondary": "#735c00", "surface-dim": "#dbdad6", "on-tertiary-fixed": "#1d1830", "tertiary-fixed-dim": "#cbc2e2", "inverse-primary": "#bcc7de", "primary-fixed-dim": "#bcc7de", "primary-container": "#1e293b", "surface-container-low": "#f5f3ef", "error-container": "#ffdad6", "on-surface": "#1b1c1a", "outline-variant": "#c5c6cd", "error": "#ba1a1a", "on-tertiary-fixed-variant": "#49435d", "on-primary-fixed-variant": "#3c475a", "primary": "#091426", "secondary-fixed-dim": "#e9c349", "background": "#fbf9f5", "surface-variant": "#e4e2de", "on-tertiary-container": "#948ca9", "inverse-surface": "#30312e", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#574500", "surface-container": "#efeeea", "surface-bright": "#fbf9f5", "on-secondary-container": "#745c00", "on-error": "#ffffff", "surface-container-lowest": "#ffffff", "on-background": "#1b1c1a", "inverse-on-surface": "#f2f0ed", "surface-container-highest": "#e4e2de", "on-primary": "#ffffff", "on-secondary-fixed": "#241a00", "on-secondary": "#ffffff", "tertiary-container": "#2b253e", "tertiary": "#161128", "outline": "#75777d", "on-surface-variant": "#45474c", "secondary-container": "#fed65b", "surface-container-high": "#eae8e4", "tertiary-fixed": "#e8deff", "secondary-fixed": "#ffe088", "primary-fixed": "#d8e3fb", "on-primary-fixed": "#111c2d", "surface": "#fbf9f5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-desktop": "5rem", "max-width-content": "1280px", "unit-md": "1rem", "margin-mobile": "1.25rem", "unit-4xl": "6rem", "gutter-mobile": "1rem", "unit-3xl": "4rem", "unit-sm": "0.75rem", "unit-lg": "1.5rem", "unit-2xl": "3rem", "gutter-desktop": "2rem", "unit-2xs": "0.25rem", "unit-xl": "2rem", "unit-5xl": "8rem", "unit-xs": "0.5rem" }, "fontFamily": { "quote-lead": [ "Playfair Display" ], "display-hero-mobile": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "title-editorial": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ], "display-hero": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "label-caps": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ] }, "fontSize": { "quote-lead": [ "26px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-hero-mobile": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "title-editorial": [ "22px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "display-hero": [ "64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" } ], "headline-md": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" } ], "headline-lg-mobile": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-lg": [ "18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "headline-lg": [ "44px", { "lineHeight": "52px", "letterSpacing": "-0.015em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] transition-all duration-300"><div class="w-full bg-surface-container-low/70 py-1 px-margin-mobile lg:px-margin-desktop text-right"><button class="inline-flex items-center gap-unit-xs font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.documentElement.classList.toggle('motion-reduce')" type="button"><span class="material-symbols-outlined text-[14px]">accessibility_new</span><span class="">Reducir animaciones</span></button></div><div class="h-20 max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop flex items-center justify-between gap-unit-md"><div class="flex items-center gap-unit-md"><a class="group flex flex-col" data-path="inicio" href="#"><span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-primary group-hover:text-secondary transition-colors">Daniela Gil&nbsp;</span><span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Estrategia &amp; PR</span></a></div><nav class="hidden xl:flex items-center gap-unit-2xs bg-surface-container-low/80 p-unit-2xs rounded-full shadow-[0_2px_12px_rgba(30,41,59,0.03)]" data-active-classes="bg-primary-container text-on-primary-container rounded-full shadow-sm"><a aria-current="page" class="px-unit-sm py-unit-xs font-label-md transition-colors bg-primary-container text-on-primary-container rounded-full shadow-sm" data-path="inicio" href="#">Inicio</a><a class="px-unit-sm py-unit-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="sobre-mi" href="#">Sobre mí</a><a class="px-unit-sm py-unit-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="servicios" href="#">Servicios</a><a class="px-unit-sm py-unit-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="metodologia" href="#">Metodología</a><a class="px-unit-sm py-unit-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="proyectos" href="#">Proyectos</a><a class="px-unit-sm py-unit-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="insights" href="#">Insights</a><a class="px-unit-sm py-unit-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors rounded-full" data-path="contacto" href="#">Contacto</a></nav><div class="flex items-center gap-unit-md"><a class="inline-flex items-center justify-center px-unit-lg py-unit-xs bg-primary text-on-primary font-label-md text-label-md rounded-full hover:bg-primary-container hover:text-on-primary-container transition-all shadow-[0_4px_16px_rgba(9,20,38,0.12)]" data-path="contacto" href="#"><span class="">Hablemos</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-sm ring-1 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJvVIVljj55Eo8DC2IJpeWaxBxrc0EM5jGOhvTt7F-I6ZFOJUVWO2fhqr3VQA2C0WOUPnOU3hSi_LfFP-QGmMTz4lhNrs-1M2GQXifqcmr_JwHIOoxcafgIjjPef-Wnp6ZfyXmRLBwkoLnyVMxWJxjDGJWPInGw4xuVvNhd_9o50A4Ya9vxDy7r4TzNZMKpzWh2qHT7qVub5EqVafs06g7P1znmhjShj-t_i0--Vsp2Wv-8AtIRNas"></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Schema.org JSON-LD structured data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://valentinaserna.com/#valentina",
+        "name": "Valentina Serna",
+        "givenName": "Valentina",
+        "familyName": "Serna",
+        "jobTitle": "Strategic Communications & PR Advisor",
+        "description": "Consultora y estratega de comunicación con más de 12 años transformando visiones complejas en narrativas memorables para directivos, marcas globales e instituciones.",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCJvVIVljj55Eo8DC2IJpeWaxBxrc0EM5jGOhvTt7F-I6ZFOJUVWO2fhqr3VQA2C0WOUPnOU3hSi_LfFP-QGmMTz4lhNrs-1M2GQXifqcmr_JwHIOoxcafgIjjPef-Wnp6ZfyXmRLBwkoLnyVMxWJxjDGJWPInGw4xuVvNhd_9o50A4Ya9vxDy7r4TzNZMKpzWh2qHT7qVub5EqVafs06g7P1znmhjShj-t_i0--Vsp2Wv-8AtIRNas",
+        "url": "https://valentinaserna.com",
+        "knowsAbout": [
+          "Strategic Communications",
+          "Executive PR Advisory",
+          "Crisis Management",
+          "Personal Branding for C-Suite",
+          "Reputational Governance",
+          "Corporate Storytelling",
+          "Media Relations"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/valentinaserna-pr",
+          "https://substack.com/@valentinaserna",
+          "https://twitter.com/valentinaserna",
+          "https://open.spotify.com/show/valentinaserna"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://valentinaserna.com/#service",
+        "name": "Valentina Serna — Executive Communications & PR Advisory",
+        "founder": {
+          "@id": "https://valentinaserna.com/#valentina"
+        },
+        "url": "https://valentinaserna.com",
+        "priceRange": "$$$$",
+        "areaServed": [
+          { "@type": "Country", "name": "Colombia" },
+          { "@type": "Country", "name": "España" },
+          { "@type": "Country", "name": "México" },
+          { "@type": "Country", "name": "Estados Unidos" },
+          { "@type": "AdministrativeArea", "name": "Global" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Asesoría Estratégica",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Estrategia de Comunicación 360°"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Relaciones Públicas & Reputación Corporativa"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Estrategia de Marca & C-Suite Personal Branding"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Storytelling & Creación de Contenidos Ejecutivos"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Gestión de Crisis & Contención de Riesgos"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://valentinaserna.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Sobre mí",
+            "item": "https://valentinaserna.com/#sobre-mi"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Servicios",
+            "item": "https://valentinaserna.com/#servicios"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Metodología",
+            "item": "https://valentinaserna.com/#metodologia"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Proyectos",
+            "item": "https://valentinaserna.com/#proyectos"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Insights",
+            "item": "https://valentinaserna.com/#insights"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Contacto",
+            "item": "https://valentinaserna.com/#contacto"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<!-- =========================================================================
+       1. HERO SECTION
+       ========================================================================= -->
+<section class="relative w-full overflow-hidden pb-unit-4xl pt-unit-xl">
+<!-- Ambient Luminous Atmosphere Backdrops -->
+<div class="pointer-events-none absolute top-[-5%] left-1/2 -translate-x-1/2 w-[980px] h-[580px] bg-gradient-to-r from-tertiary-fixed/35 via-error-container/25 to-primary-fixed/35 rounded-full blur-[110px] -z-10"></div>
+<div class="pointer-events-none absolute top-[30%] right-[-10%] w-[520px] h-[520px] bg-secondary-fixed/25 rounded-full blur-[120px] -z-10"></div>
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto mb-unit-lg">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-unit-xs px-unit-md py-unit-2xs rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-sm mb-unit-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Comunicación Estratégica · Relaciones Públicas · Storytelling</span>
+</div>
+<!-- H1 Hero Headline -->
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight mb-unit-md text-balance">
+          Transformo ideas en estrategias que conectan, comunican y generan impacto.
+        </h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl text-balance mb-unit-xl">
+          Asesoría de alto nivel para líderes, empresas e instituciones que buscan proyectar una voz auténtica, proteger su reputación y liderar la conversación pública.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-unit-md">
+<a class="inline-flex items-center gap-unit-xs px-unit-xl py-unit-sm rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-lg hover:bg-primary-container hover:text-on-primary-container transition-all" href="#proyectos">
+<span class="">Conoce mi trabajo</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-unit-xs px-unit-xl py-unit-sm rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-md text-label-md shadow-sm hover:bg-surface-container transition-all" href="#contacto">
+<span class="material-symbols-outlined text-[18px] text-secondary">forum</span>
+<span class="">Hablemos</span>
+</a>
+</div>
+</div>
+<!-- 3D Scene Embedded Component -->
+<div class="relative w-full h-[520px] rounded-3xl overflow-hidden shadow-2xl my-6 bg-gradient-to-br from-rose-50/40 via-purple-50/30 to-sky-50/40">
+<!-- STITCH_THREEJS_START:ANIMATION_2 class="absolute inset-0 w-full h-full bg-transparent" -->
+<div class="absolute inset-0 w-full h-full bg-transparent" style="display:block;">
+<script src="https://ajax.googleapis.com/ajax/libs/threejs/r125/three.min.js"></script>
+<div id="threejs-container-ANIMATION_2" style="width:100%;height:100%"><canvas width="1824" height="780" style="display: block; width: 1216px; height: 520px;"></canvas><canvas width="1824" height="780" style="display: block; width: 1216px; height: 520px;"></canvas><canvas width="1824" height="780" style="display: block; width: 1216px; height: 520px;"></canvas><canvas width="1824" height="780" style="display: block; width: 1216px; height: 520px;"></canvas></div>
+<script>
+(function() {
+  const container = document.getElementById('threejs-container-ANIMATION_2');
+  const devicePixelRatio = window.devicePixelRatio || 1;
+  // Three.js interactive 3D scene representing Strategic Communication, Ideas & Connections
+// Smooth pastel glowing spheres connected by dynamic pulsing threads and orbital communication nodes
+
+const width = container.clientWidth || window.innerWidth;
+const height = container.clientHeight || window.innerHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
+camera.position.set(0, 0, 8.5);
+
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setSize(width, height);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+container.appendChild(renderer.domElement);
+
+// Lighting
+const ambientLight = new THREE.AmbientLight(0xffffff, 1.4);
+scene.add(ambientLight);
+
+const dirLight1 = new THREE.DirectionalLight(0xffd6e0, 2.0); // Soft Rose Light
+dirLight1.position.set(5, 5, 4);
+scene.add(dirLight1);
+
+const dirLight2 = new THREE.DirectionalLight(0xdbeafe, 1.8); // Celestial Sky Blue Light
+dirLight2.position.set(-5, -4, 3);
+scene.add(dirLight2);
+
+const dirLight3 = new THREE.DirectionalLight(0xf3e8ff, 1.5); // Lilac sheen
+dirLight3.position.set(0, 6, -2);
+scene.add(dirLight3);
+
+// Group holding all 3D communication elements
+const masterGroup = new THREE.Group();
+scene.add(masterGroup);
+
+// Materials with elegant pastel iridescent appearance
+const roseMaterial = new THREE.MeshPhongMaterial({
+  color: 0xf8b4d9,
+  emissive: 0x5a1846,
+  specular: 0xffffff,
+  shininess: 90,
+  transparent: true,
+  opacity: 0.92
+});
+
+const lilacMaterial = new THREE.MeshPhongMaterial({
+  color: 0xc4b5fd,
+  emissive: 0x2e1065,
+  specular: 0xffffff,
+  shininess: 85,
+  transparent: true,
+  opacity: 0.88
+});
+
+const skyMaterial = new THREE.MeshPhongMaterial({
+  color: 0x93c5fd,
+  emissive: 0x0c4a6e,
+  specular: 0xffffff,
+  shininess: 80,
+  transparent: true,
+  opacity: 0.85
+});
+
+const mintMaterial = new THREE.MeshPhongMaterial({
+  color: 0xa7f3d0,
+  emissive: 0x064e3b,
+  specular: 0xffffff,
+  shininess: 80,
+  transparent: true,
+  opacity: 0.88
+});
+
+const pearlMaterial = new THREE.MeshPhongMaterial({
+  color: 0xfef08a,
+  emissive: 0x713f12,
+  specular: 0xffffff,
+  shininess: 100,
+  transparent: true,
+  opacity: 0.95
+});
+
+// Central "Idea / Core Strategy" Sphere
+const coreGeo = new THREE.SphereGeometry(1.2, 48, 48);
+const coreSphere = new THREE.Mesh(coreGeo, pearlMaterial);
+masterGroup.add(coreSphere);
+
+// Surrounding Strategic Satellite Nodes representing the 5 Keywords:
+// Determinada (Rose), Creativa (Lilac), Sensible (Sky), Apasionada (Mint), Resolutiva (Pearlescent Amber)
+const nodeData = [
+  { mat: roseMaterial, size: 0.65, dist: 2.8, angle: 0, speed: 0.009, yOffset: 0.4 },
+  { mat: lilacMaterial, size: 0.55, dist: 3.2, angle: 1.25, speed: -0.007, yOffset: -0.5 },
+  { mat: skyMaterial, size: 0.58, dist: 2.6, angle: 2.5, speed: 0.008, yOffset: 0.6 },
+  { mat: mintMaterial, size: 0.48, dist: 3.5, angle: 3.8, speed: -0.006, yOffset: -0.3 },
+  { mat: roseMaterial, size: 0.5, dist: 3.0, angle: 5.0, speed: 0.007, yOffset: 0.2 }
+];
+
+const nodes = [];
+nodeData.forEach((d) => {
+  const geo = new THREE.SphereGeometry(d.size, 32, 32);
+  const mesh = new THREE.Mesh(geo, d.mat);
+  masterGroup.add(mesh);
+  nodes.push({ mesh, ...d });
+});
+
+// Subtle orbital communication rings
+const ringMat1 = new THREE.MeshBasicMaterial({ color: 0xe0e7ff, transparent: true, opacity: 0.35, wireframe: true });
+const ringGeo1 = new THREE.TorusGeometry(3.1, 0.018, 16, 100);
+const ringMesh1 = new THREE.Mesh(ringGeo1, ringMat1);
+ringMesh1.rotation.x = Math.PI / 3;
+ringMesh1.rotation.y = Math.PI / 6;
+masterGroup.add(ringMesh1);
+
+const ringMat2 = new THREE.MeshBasicMaterial({ color: 0xfce7f3, transparent: true, opacity: 0.28, wireframe: true });
+const ringGeo2 = new THREE.TorusGeometry(2.5, 0.015, 16, 90);
+const ringMesh2 = new THREE.Mesh(ringGeo2, ringMat2);
+ringMesh2.rotation.x = -Math.PI / 4;
+ringMesh2.rotation.z = Math.PI / 5;
+masterGroup.add(ringMesh2);
+
+// Connecting dynamic lines (strategy pathways connecting to core)
+const lineMaterial = new THREE.LineBasicMaterial({
+  color: 0xa5b4fc,
+  transparent: true,
+  opacity: 0.45
+});
+
+const lineGeometries = [];
+const lines = [];
+
+nodes.forEach((node) => {
+  const points = [new THREE.Vector3(0, 0, 0), new THREE.Vector3(0, 0, 0)];
+  const lineGeo = new THREE.BufferGeometry().setFromPoints(points);
+  const line = new THREE.Line(lineGeo, lineMaterial);
+  masterGroup.add(line);
+  lineGeometries.push(lineGeo);
+  lines.push(line);
+});
+
+// Mouse interactivity
+let mouseX = 0;
+let mouseY = 0;
+let targetX = 0;
+let targetY = 0;
+
+function onMouseMove(event) {
+  const rect = container.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  mouseX = (x / rect.width - 0.5) * 2;
+  mouseY = -(y / rect.height - 0.5) * 2;
+}
+
+window.addEventListener('mousemove', onMouseMove);
+
+function onWindowResize() {
+  const w = container.clientWidth || window.innerWidth;
+  const h = container.clientHeight || window.innerHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+}
+window.addEventListener('resize', onWindowResize);
+
+// Animation Loop
+let clock = new THREE.Clock();
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  const elapsedTime = clock.getElapsedTime();
+
+  // Smooth mouse follow
+  targetX += (mouseX * 0.8 - targetX) * 0.05;
+  targetY += (mouseY * 0.8 - targetY) * 0.05;
+
+  masterGroup.rotation.y = targetX * 0.5 + elapsedTime * 0.08;
+  masterGroup.rotation.x = targetY * 0.4 + Math.sin(elapsedTime * 0.4) * 0.08;
+
+  // Gentle floating pulse for core
+  const coreScale = 1.0 + Math.sin(elapsedTime * 1.5) * 0.05;
+  coreSphere.scale.set(coreScale, coreScale, coreScale);
+
+  // Animate nodes and update connecting lines
+  nodes.forEach((node, idx) => {
+    node.angle += node.speed;
+    const currentDist = node.dist + Math.sin(elapsedTime * 1.2 + idx) * 0.2;
+    const x = Math.cos(node.angle) * currentDist;
+    const z = Math.sin(node.angle) * currentDist;
+    const y = node.yOffset + Math.sin(elapsedTime * 2.0 + idx * 1.5) * 0.35;
+
+    node.mesh.position.set(x, y, z);
+
+    // Update connection line
+    const positions = lineGeometries[idx].attributes.position.array;
+    positions[0] = 0;
+    positions[1] = 0;
+    positions[2] = 0;
+    positions[3] = x;
+    positions[4] = y;
+    positions[5] = z;
+    lineGeometries[idx].attributes.position.needsUpdate = true;
+  });
+
+  ringMesh1.rotation.z += 0.003;
+  ringMesh2.rotation.y -= 0.004;
+
+  renderer.render(scene, camera);
+}
+
+animate();
+
+})();
+</script>
+</div>
+<!-- STITCH_THREEJS_END:ANIMATION_2 -->
+<!-- Subtle editorial floating badge over 3D canvas -->
+<div class="absolute bottom-unit-lg left-unit-lg right-unit-lg md:right-auto md:max-w-md p-unit-md rounded-2xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-xl flex items-center gap-unit-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col text-left">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Acreditación &amp; Trayectoria</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Asesoría confidencial a comités ejecutivos y personalidades públicas en Iberoamérica y la Unión Europea.</p>
+</div>
+</div>
+</div>
+<!-- Visual Trust Proof Bar -->
+<div class="w-full mt-unit-xl p-unit-lg rounded-2xl bg-surface-container-low/70 backdrop-blur-sm shadow-sm flex flex-col md:flex-row items-center justify-between gap-unit-md">
+<div class="flex items-center gap-unit-sm shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">auto_awesome</span>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">Trust &amp; Reach</span>
+</div>
+<div class="text-center md:text-left">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Estrategias implementadas para marcas globales, startups de alto crecimiento y directivos de impacto.
+          </p>
+</div>
+<div class="flex items-center gap-unit-xl text-on-surface-variant/80 font-label-md text-label-md">
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary">+120</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Campañas Tier-1</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary">12+</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Años de Trayectoria</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary">98%</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">Retención C-Suite</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       2. SECCIÓN "SOBRE MÍ" (Human + Strategic + Creative)
+       ========================================================================= -->
+<section class="w-full py-unit-4xl relative bg-surface-container-low/50" id="sobre-mi">
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center mb-unit-3xl">
+<!-- Editorial Portrait Frame -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-3xl overflow-hidden shadow-2xl bg-surface-container-high aspect-[4/5]">
+<img alt="Daniela Gil - Consultora y estratega de comunicación ejecutiva" class="w-full h-full object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWKso63vMbB0eLBc7KZRbF8GD4kIVnDN46mtR1W2KGJFVymY6t5KRLOtkLpoYBXu2AnIp0mGrzKvam-zIIwSdJCfkRcW3t1ak1-aFxwL8v5_AW0iXvvkRjw4Os4ABn5R6yWw2PBgo2XNZDr4bkvY0OWjfaOd4ajgqAsyAFor7yAdhRzNulj-IEHo8LLYqaEL4ga6hxkTlSotM2EnV5Fv3gi_Flero95MeM8OhjjTospJRF3P8a7Q-0LPH0tVH4-7K0I2tXPyjvUJex5g">
+<!-- Inner subtle overlay gradient for cinematic contrast -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-unit-lg left-unit-lg right-unit-lg text-on-primary">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">Daniela Gil</span>
+<p class="font-quote-lead text-title-editorial italic">"La reputación no es lo que dices de ti mismo; es lo que otros defienden cuando no estás en la sala."</p>
+</div>
+</div>
+<!-- Decorative Floating Card -->
+<div class="absolute -bottom-6 -right-4 p-unit-md rounded-2xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl hidden sm:flex items-center gap-unit-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<span class="block font-label-caps text-label-caps uppercase text-primary">Pensamiento Crítico</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Narrativa con tracción humana</span>
+</div>
+</div>
+</div>
+<!-- Bio & Value Proposition -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-unit-xs mb-unit-sm">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Sobre Mí · Filosofía &amp; Origen</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-unit-md text-balance">
+            La palabra como herramienta de arquitectura reputacional y poder transformador.
+          </h2>
+<p class="font-body-lg text-body-lg text-primary font-medium mb-unit-md">Soy Daniela Gil, consultora y estratega de comunicación con más de 12 años transformando visiones complejas en narrativas memorables.</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-md">
+            Mi trayectoria transita entre la asesoría en juntas directivas, la orquestación de relaciones públicas para empresas que redefinen sectores, y el diseño de la voz pública de fundadores y directores ejecutivos. Concibo la comunicación no como una capa cosmética, sino como un pilar nuclear de toma de decisiones corporativas.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-xl">
+            He liderado narrativas ante crisis regulatorias agudas, lanzamientos tecnológicos de alto riesgo y transformaciones culturales profundas, siempre guiada por un equilibrio exacto: rigor metodológico, sensibilidad ética e ingenio creativo.
+          </p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-unit-md p-unit-md rounded-2xl bg-surface-container-lowest/70 backdrop-blur-sm shadow-sm">
+<div>
+<span class="block font-headline-sm text-headline-sm text-primary">+80</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Líderes C-Level entrenados</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-primary">100%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Confidencialidad rigurosa</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-primary">Iberoamérica</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enfoque transfronterizo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- 5 Core Keywords Cards -->
+<div class="mt-unit-3xl">
+<div class="text-center max-w-2xl mx-auto mb-unit-xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Mis 5 Pilares Fundamentales</span>
+<h3 class="font-headline-md text-headline-md text-primary mt-unit-2xs">El ADN de mi enfoque de consultoría</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-mobile">
+<!-- 1. DETERMINADA -->
+<div class="group p-unit-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed/60 text-on-tertiary-fixed flex items-center justify-center mb-unit-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">flag</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">01 / Eje</span>
+<h4 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">DETERMINADA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Transmito liderazgo firme, disciplina metodológica y foco inquebrantable en objetivos de negocio medibles.
+              </p>
+</div>
+<div class="mt-unit-md pt-unit-xs border-t-0 bg-transparent flex items-center gap-unit-2xs text-secondary font-label-caps text-label-caps">
+<span class="">FOCO &amp; RESULTADOS</span>
+</div>
+</div>
+<!-- 2. CREATIVA -->
+<div class="group p-unit-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/60 text-on-secondary-fixed flex items-center justify-center mb-unit-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">02 / Eje</span>
+<h4 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">CREATIVA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Concibo ángulos disruptivos y formatos visuales que rompen la inercia del ruido mediático y la monotonía corporativa.
+              </p>
+</div>
+<div class="mt-unit-md pt-unit-xs border-t-0 bg-transparent flex items-center gap-unit-2xs text-secondary font-label-caps text-label-caps">
+<span class="">DISRUPCIÓN CULTURAL</span>
+</div>
+</div>
+<!-- 3. SENSIBLE -->
+<div class="group p-unit-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-error-container/50 text-on-error-container flex items-center justify-center mb-unit-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">03 / Eje</span>
+<h4 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">SENSIBLE</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Empatía profunda con audiencias y equipos; entiendo las emociones humanas, miedos y deseos detrás de cada decisión.
+              </p>
+</div>
+<div class="mt-unit-md pt-unit-xs border-t-0 bg-transparent flex items-center gap-unit-2xs text-secondary font-label-caps text-label-caps">
+<span class="">HUMANIDAD &amp; ESCUCHA</span>
+</div>
+</div>
+<!-- 4. APASIONADA -->
+<div class="group p-unit-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/70 text-on-primary-fixed flex items-center justify-center mb-unit-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">local_fire_department</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">04 / Eje</span>
+<h4 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">APASIONADA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Energía contagiosa y devoción absoluta por el poder transformador de la palabra, el diálogo reflexivo y el relato vivo.
+              </p>
+</div>
+<div class="mt-unit-md pt-unit-xs border-t-0 bg-transparent flex items-center gap-unit-2xs text-secondary font-label-caps text-label-caps">
+<span class="">DEVOCIÓN EDITORIAL</span>
+</div>
+</div>
+<!-- 5. RESOLUTIVA -->
+<div class="group p-unit-lg rounded-2xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-variant text-primary flex items-center justify-center mb-unit-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">bolt</span>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">05 / Eje</span>
+<h4 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">RESOLUTIVA</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Traduzco crisis y bloqueos complejos en planes de acción inmediatos, claros, pragmáticos y totalmente ejecutables.
+              </p>
+</div>
+<div class="mt-unit-md pt-unit-xs border-t-0 bg-transparent flex items-center gap-unit-2xs text-secondary font-label-caps text-label-caps">
+<span class="">AGILIDAD ESTRATÉGICA</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       3. SECCIÓN "LO QUE HAGO" (Servicios Estratégicos)
+       ========================================================================= -->
+<section class="w-full py-unit-5xl relative" id="servicios">
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-unit-3xl gap-unit-lg">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Capacidades &amp; Práctica Asesora</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-unit-2xs">
+            Servicios diseñados para elevar la voz y blindar la reputación institucional.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Abordajes integrales y personalizados para momentos decisivos de crecimiento, transformación corporativa o defensa reputacional.
+        </p>
+</div>
+<!-- Services Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- 1. Estrategia de Comunicación -->
+<div class="group relative rounded-3xl p-unit-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/20 rounded-bl-full pointer-events-none -z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-primary text-on-primary flex items-center justify-center mb-unit-lg shadow-md group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<span class="px-unit-sm py-unit-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps uppercase inline-block mb-unit-sm">Core Advisory</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm">Estrategia de Comunicación</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Diseño integral de la infraestructura comunicativa de organizaciones con propósitos audaces.
+            </p>
+<ul class="space-y-unit-xs font-body-sm text-body-sm text-on-surface mb-unit-xl">
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Diseño de estrategias integrales y directrices maestras.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Definición de mensajes clave y mapas de posicionamiento.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Planes de comunicación 360° para hitos corporativos.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Comunicación interna, cascadeo y alineación directiva.</span>
+</li>
+</ul>
+</div>
+<a class="relative z-10 inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary hover:text-secondary transition-colors group-hover:translate-x-1 duration-200" href="#contacto">
+<span class="">Explorar asesoría</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 2. Relaciones Públicas -->
+<div class="group relative rounded-3xl p-unit-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-fixed/20 rounded-bl-full pointer-events-none -z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-secondary text-on-secondary flex items-center justify-center mb-unit-lg shadow-md group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">newspaper</span>
+</div>
+<span class="px-unit-sm py-unit-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase inline-block mb-unit-sm">Medios &amp; Influencia</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm">Relaciones Públicas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Conexión genuina con líderes de opinión y medios influyentes para amplificar hitos con credibilidad.
+            </p>
+<ul class="space-y-unit-xs font-body-sm text-body-sm text-on-surface mb-unit-xl">
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Gestión activa y preventiva de la reputación corporativa.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Relacionamiento orgánico con stakeholders y medios Tier-1.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Posicionamiento de voceros C-Level y media training.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Ruedas de prensa, viajes editoriales y exclusivas.</span>
+</li>
+</ul>
+</div>
+<a class="relative z-10 inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary hover:text-secondary transition-colors group-hover:translate-x-1 duration-200" href="#contacto">
+<span class="">Explorar asesoría</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 3. Estrategia de Marca & Personal Branding -->
+<div class="group relative rounded-3xl p-unit-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary-fixed/20 rounded-bl-full pointer-events-none -z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-container text-on-tertiary flex items-center justify-center mb-unit-lg shadow-md group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">attribution</span>
+</div>
+<span class="px-unit-sm py-unit-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase inline-block mb-unit-sm">Liderazgo &amp; Voz</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm">Marca &amp; Personal Branding</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Construcción de perfiles ejecutivos de referencia que proyectan autoridad sin perder autenticidad humana.
+            </p>
+<ul class="space-y-unit-xs font-body-sm text-body-sm text-on-surface mb-unit-xl">
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Construcción de narrativa y territorio de identidad directiva.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Arquitectura de mensajes para perfiles ejecutivos y fundadores.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Posicionamiento en foros mundiales, keynotes y paneles.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Estrategia editorial para perfiles influyentes en LinkedIn.</span>
+</li>
+</ul>
+</div>
+<a class="relative z-10 inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary hover:text-secondary transition-colors group-hover:translate-x-1 duration-200" href="#contacto">
+<span class="">Explorar asesoría</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 4. Storytelling & Creación de Contenidos -->
+<div class="group relative rounded-3xl p-unit-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between lg:col-span-1">
+<div class="absolute top-0 right-0 w-32 h-32 bg-error-container/20 rounded-bl-full pointer-events-none -z-0"></div>
+<div class="relative z-10">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest text-primary flex items-center justify-center mb-unit-lg shadow-md group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">auto_stories</span>
+</div>
+<span class="px-unit-sm py-unit-2xs rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase inline-block mb-unit-sm">Relato Vivo</span>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm">Storytelling &amp; Contenidos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Historias corporativas memorables que convierten conceptos abstractos en adhesión emocional real.
+            </p>
+<ul class="space-y-unit-xs font-body-sm text-body-sm text-on-surface mb-unit-xl">
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Narrativas institucionales y libros blancos de propósito.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Campañas transmedia para causas, ESG y proyectos de cambio.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Estrategia editorial multicanal para Thought Leadership.</span>
+</li>
+<li class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span class="">Discursos, cartas de accionistas e informes de impacto.</span>
+</li>
+</ul>
+</div>
+<a class="relative z-10 inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary hover:text-secondary transition-colors group-hover:translate-x-1 duration-200" href="#contacto">
+<span class="">Explorar asesoría</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- 5. Comunicación de Crisis y Reputación -->
+<div class="group relative rounded-3xl p-unit-xl bg-surface-container-lowest/80 backdrop-blur-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between lg:col-span-2">
+<div class="absolute top-0 right-0 w-48 h-48 bg-secondary-container/20 rounded-bl-full pointer-events-none -z-0"></div>
+<div class="relative z-10">
+<div class="flex items-center gap-unit-md mb-unit-lg">
+<div class="w-14 h-14 rounded-2xl bg-primary-container text-on-primary-container flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
+</div>
+<div>
+<span class="px-unit-sm py-unit-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase inline-block mb-1">Gobernanza Crítica</span>
+<h3 class="font-headline-md text-headline-md text-primary">Comunicación de Crisis y Reputación</h3>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mb-unit-lg">
+              Resguardo del activo intangible más valioso de cualquier corporación ante situaciones de alta presión mediática, regulatoria o interna.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-unit-md mb-unit-xl">
+<div class="space-y-unit-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="">Auditorías preventivas de vulnerabilidad y mapas de calor reputacional.</span>
+</div>
+<div class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="">War-rooms ejecutivos y manuales de contención en tiempo real.</span>
+</div>
+</div>
+<div class="space-y-unit-xs font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="">Mitigación de riesgos operacionales y recuperación de credibilidad.</span>
+</div>
+<div class="flex items-start gap-unit-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">verified_user</span>
+<span class="">Comités de crisis y mediación con organismos reguladores y prensa de investigación.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 flex items-center justify-between pt-unit-md border-t border-transparent">
+<span class="font-label-caps text-label-caps text-outline uppercase">Respuesta inmediata 24/7 en contingencias críticas</span>
+<a class="inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary hover:text-secondary transition-colors group-hover:translate-x-1 duration-200" href="#contacto">
+<span class="">Solicitar protocolo de crisis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       4. SECCIÓN "MI FORMA DE TRABAJAR" (Metodología de 5 Etapas)
+       ========================================================================= -->
+<section class="w-full py-unit-5xl bg-surface-container-low/60 relative" id="metodologia">
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<div class="text-center max-w-2xl mx-auto mb-unit-3xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Rigor Metodológico</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-unit-2xs">
+          Mi forma de trabajar: El ciclo de 5 etapas
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-unit-xs">
+          Un proceso sistemático que combina investigación antropológica de audiencias, análisis cuantitativo de percepción y ejecuciones creativas de alto calibre.
+        </p>
+</div>
+<!-- Interactive Step-by-Step Timeline Container -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-unit-md relative">
+<!-- Connecting subtle line visible on desktop -->
+<div class="hidden md:block absolute top-12 left-10 right-10 h-0.5 bg-gradient-to-r from-primary/10 via-secondary/30 to-primary/10 -z-0"></div>
+<!-- 01 — Escucho -->
+<div class="relative z-10 flex flex-col p-unit-lg rounded-3xl bg-surface-container-lowest/90 backdrop-blur-md shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline-sm text-headline-sm mb-unit-md shadow-md">
+            1
+          </div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Etapa 01</span>
+<h3 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">Escucho</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md">
+            Entiendo el contexto cultural, los públicos clave, las tensiones soterradas y la raíz profunda del desafío.
+          </p>
+<div class="mt-auto pt-unit-xs">
+<span class="text-[11px] font-label-caps uppercase text-outline">Entregable: Matriz de Empatía &amp; Entrevistas de Fondo</span>
+</div>
+</div>
+<!-- 02 — Analizo -->
+<div class="relative z-10 flex flex-col p-unit-lg rounded-3xl bg-surface-container-lowest/90 backdrop-blur-md shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-primary flex items-center justify-center font-headline-sm text-headline-sm mb-unit-md shadow-md">
+            2
+          </div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Etapa 02</span>
+<h3 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">Analizo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md">
+            Identifico oportunidades diferenciales de posicionamiento, riesgos latentes de reputación y brechas de mensaje.
+          </p>
+<div class="mt-auto pt-unit-xs">
+<span class="text-[11px] font-label-caps uppercase text-outline">Entregable: Diagnóstico de Percepción &amp; Benchmarks</span>
+</div>
+</div>
+<!-- 03 — Creo -->
+<div class="relative z-10 flex flex-col p-unit-lg rounded-3xl bg-surface-container-lowest/90 backdrop-blur-md shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm mb-unit-md shadow-md">
+            3
+          </div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Etapa 03</span>
+<h3 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">Creo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md">
+            Desarrollo conceptos diferenciales, matrices narrativas, territorio verbal y soluciones creativas de alto impacto.
+          </p>
+<div class="mt-auto pt-unit-xs">
+<span class="text-[11px] font-label-caps uppercase text-outline">Entregable: Libro Maestro de Narrativa &amp; Storytelling</span>
+</div>
+</div>
+<!-- 04 — Estratégico -->
+<div class="relative z-10 flex flex-col p-unit-lg rounded-3xl bg-surface-container-lowest/90 backdrop-blur-md shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline-sm text-headline-sm mb-unit-md shadow-md">
+            4
+          </div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Etapa 04</span>
+<h3 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">Estratégico</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md">
+            Convierto ideas audaces en un plan táctico ejecutable con KPIs claros, cronogramas por fases y asignación de canales.
+          </p>
+<div class="mt-auto pt-unit-xs">
+<span class="text-[11px] font-label-caps uppercase text-outline">Entregable: Roadmap Operativo &amp; Tablero de Control</span>
+</div>
+</div>
+<!-- 05 — Resuelvo -->
+<div class="relative z-10 flex flex-col p-unit-lg rounded-3xl bg-surface-container-lowest/90 backdrop-blur-md shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm mb-unit-md shadow-md">
+            5
+          </div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Etapa 05</span>
+<h3 class="font-headline-sm text-headline-sm text-primary my-unit-2xs">Resuelvo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-md">
+            Acompaño mano a mano la implementación en sala de prensa, monitoreo continuo de percepción y optimización iterativa.
+          </p>
+<div class="mt-auto pt-unit-xs">
+<span class="text-[11px] font-label-caps uppercase text-outline">Entregable: Informes de Impacto &amp; Ajuste de Rumbo</span>
+</div>
+</div>
+</div>
+<!-- Quote callout -->
+<div class="mt-unit-3xl max-w-3xl mx-auto p-unit-xl rounded-3xl bg-surface-container-lowest/90 text-center shadow-lg">
+<span class="material-symbols-outlined text-secondary text-[32px] mb-unit-xs">format_quote</span>
+<blockquote class="font-quote-lead text-quote-lead text-primary mb-unit-sm">
+          "Un gran mensaje sin estrategia es solo ruido decorativo. Una estrategia sin emoción humana nunca mueve a nadie a actuar."
+        </blockquote>
+<cite class="font-label-caps text-label-caps uppercase text-outline not-italic">— Principio metodológico Daniela Gil</cite>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       5. SECCIÓN "PROYECTOS QUE COMUNICAN" (Portafolio Editorial)
+       ========================================================================= -->
+<section class="w-full py-unit-5xl" id="proyectos">
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-unit-3xl gap-unit-lg">
+<div class="max-w-2xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Portafolio Seleccionado</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-unit-2xs">
+            Proyectos que comunican, transforman y trascienden.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          Casos reales de estudio donde la precisión del mensaje generó resultados comerciales, reputacionales y de gobernanza medibles.
+        </p>
+</div>
+<!-- Showcase Case Studies (4 Rich Editorial Cards) -->
+<div class="space-y-unit-2xl">
+<!-- Proyecto 1: Relanzamiento Global Fintech Neobank -->
+<article class="p-unit-xl lg:p-unit-2xl rounded-3xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-unit-xs mb-unit-sm">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase">Estrategia de Marca &amp; PR</span>
+<span class="text-outline font-label-caps text-label-caps uppercase">América Latina &amp; Europa</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-primary tracking-tight mb-unit-md">
+                  Relanzamiento Global Fintech Neobank
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-unit-md mb-unit-lg">
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-error block mb-unit-2xs">El Reto</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Posicionar un unicornio financiero en medio de un clima de escepticismo regulatorio generalizado y agresiva competencia bancaria tradicional.
+                    </p>
+</div>
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-secondary block mb-unit-2xs">La Estrategia</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Campaña de transparencia narrativa radical, vocería ejecutiva en medios económicos de referencia y diseño de un índice abierto de inclusión financiera.
+                    </p>
+</div>
+</div>
+<!-- Impact Metrics Bar -->
+<div class="p-unit-md rounded-2xl bg-primary text-on-primary grid grid-cols-3 gap-unit-sm text-center">
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">+180%</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Menciones Positivas</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">24</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Medios Tier-1 Cobertura</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">$40M</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Capital Serie B Levantado</span>
+</div>
+</div>
+</div>
+<div class="mt-unit-lg flex items-center justify-between">
+<button class="inline-flex items-center gap-unit-xs px-unit-lg py-unit-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-colors" onclick="alert('Estudio de caso en profundidad disponible para descarga ejecutiva.')" type="button">
+<span class="">Ver proyecto completo</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<span class="font-label-caps text-label-caps text-outline">Duración: 9 Meses</span>
+</div>
+</div>
+<!-- Visual Decorative Folio Side -->
+<div class="lg:col-span-5 h-full flex flex-col justify-center">
+<div class="relative w-full h-80 rounded-2xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Minimalist modern fintech high-rise executive board room, warm sunset golden hour sunlight hitting architectural clean glass lines, subtle editorial luxury vibes, warm tones and deep slate reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfcInDEL6VoM-1AWvBwULExYiMUswrHJ2PO1yUHYBuHEad8Qzi0UdZ_tsPAxYI86epyAciYfbo7MbDZj9EeyjhSkwaoI39Va42aVa9MYbL7ogBHbrPtlT9FKBoVgcR4IEYiAomsFWOt7qvLewIU6uzEwPWVbfn3K1QyHvJTn8TE7IcYcXF3p_buTbxfT0LZeHrJWGAWbXkDAmSmkwq6JCOzpk9eZycxH2dR1-G8iR5dGgLOonS-N5-">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-unit-md left-unit-md right-unit-md text-on-primary">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest">Headline de Cobertura</span>
+<p class="font-headline-sm text-headline-sm">"El banco digital que convirtió la regulación en su mejor argumento de confianza"</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Proyecto 2: Gestión de Crisis & Restructuración Industrial -->
+<article class="p-unit-xl lg:p-unit-2xl rounded-3xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-unit-xs mb-unit-sm">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase">Comunicación de Crisis</span>
+<span class="text-outline font-label-caps text-label-caps uppercase">Sector Energía e Industria</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-primary tracking-tight mb-unit-md">
+                  Gestión de Crisis &amp; Restructuración Industrial
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-unit-md mb-unit-lg">
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-error block mb-unit-2xs">El Reto</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Contener una fuga reputacional severa y desconfianza comunitaria ante un proceso de reorganización operativa y laboral corporativa.
+                    </p>
+</div>
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-secondary block mb-unit-2xs">La Estrategia</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Matriz de comunicación interna con empatía profunda, asambleas abiertas con directivos y protocolo de transparencia pública con datos en vivo.
+                    </p>
+</div>
+</div>
+<!-- Impact Metrics Bar -->
+<div class="p-unit-md rounded-2xl bg-primary text-on-primary grid grid-cols-3 gap-unit-sm text-center">
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">0%</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Deserciones Críticas</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">98%</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Valor de Marca Preservado</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">48h</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Tiempo Neutralización Rumor</span>
+</div>
+</div>
+</div>
+<div class="mt-unit-lg flex items-center justify-between">
+<button class="inline-flex items-center gap-unit-xs px-unit-lg py-unit-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-colors" onclick="alert('Estudio de caso confidencial. Disponible bajo acuerdo de confidencialidad.')" type="button">
+<span class="">Ver proyecto protegido</span>
+<span class="material-symbols-outlined text-[16px]">lock</span>
+</button>
+<span class="font-label-caps text-label-caps text-outline">Gobernanza Confidencial</span>
+</div>
+</div>
+<!-- Visual Decorative Folio Side -->
+<div class="lg:col-span-5 h-full flex flex-col justify-center">
+<div class="relative w-full h-80 rounded-2xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sophisticated executive headquarters interior, glass atrium with quiet architectural harmony, soft natural morning fog diffused light, serene atmosphere evoking stability and calm under pressure." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBneHmaQL8mpvOpz1WjTJSnHRoQdP3ZCxjnCou1Ca76U8P-gUmUtLUXd36dBlthWaV-BSDtqzJnyOvmE-OdHLF973zXOy5t5TdNMjgPsyvu19-_X7oQUyR-9G-9GoA1BpvCluXP6VciDOLdJZ3tZ54RFEVM5GvwLzXl3EF-C-RmJyCZDEXFirK1nBtaWoSU-hhJStwfO04xViMVsLnKjFxXP9wdykix2OKZAqzKfy9daCBx_Cbjf0-H">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-unit-md left-unit-md right-unit-md text-on-primary">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest">Protocolo Implementado</span>
+<p class="font-headline-sm text-headline-sm">"La verdad comunicada con tacto es el único escudo que resiste el escrutinio"</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Proyecto 3: Marca Personal C-Suite Tech & Health -->
+<article class="p-unit-xl lg:p-unit-2xl rounded-3xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-unit-xs mb-unit-sm">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase">Personal Branding &amp; Thought Leadership</span>
+<span class="text-outline font-label-caps text-label-caps uppercase">Global C-Suite</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-primary tracking-tight mb-unit-md">
+                  Marca Personal C-Suite Tech &amp; Health
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-unit-md mb-unit-lg">
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-error block mb-unit-2xs">El Reto</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Transformar a una fundadora científica brillante pero hermética en una líder de opinión global y referente en biotecnología médica.
+                    </p>
+</div>
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-secondary block mb-unit-2xs">La Estrategia</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Redefinición de voz en LinkedIn, curaduría de columnas de opinión en Forbes y preparación de keynote para el circuito de conferencias TEDx.
+                    </p>
+</div>
+</div>
+<!-- Impact Metrics Bar -->
+<div class="p-unit-md rounded-2xl bg-primary text-on-primary grid grid-cols-3 gap-unit-sm text-center">
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">WEF Davos</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Invitación a Panel</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">120k+</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Seguidores Orgánicos</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">3.4M</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Impresiones de Contenido</span>
+</div>
+</div>
+</div>
+<div class="mt-unit-lg flex items-center justify-between">
+<button class="inline-flex items-center gap-unit-xs px-unit-lg py-unit-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-colors" onclick="alert('Estudio de caso de marca personal disponible en portafolio privado.')" type="button">
+<span class="">Ver proyecto</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<span class="font-label-caps text-label-caps text-outline">Plataforma: LinkedIn &amp; Global Stages</span>
+</div>
+</div>
+<!-- Visual Decorative Folio Side -->
+<div class="lg:col-span-5 h-full flex flex-col justify-center">
+<div class="relative w-full h-80 rounded-2xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High-end conference keynote stage, elegant speaker silhouette against subtle warm indigo and champagne ambient lighting, engaged audience, cinematic depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIJ9EvWM19KjYI64VeQpUSCQgiksSE3wPJ1c5r0xyWO4z5H8lIcq178lZ2phBHK7AbI2vRevndLp6pGsN4Td4DzsfjjehuWVB8ZxNK9GsUKHx25jmqbE8dofjUf9K2kBNVh7qRB9Yso3QM23Y1rn1qKUfQDhUtUYou57TvOFcI14QhKwv8-1U5rq-FxXGGMT6AgnaOedbkEwM-6J-4TQrSVPwcibRCRLipqCq7rTh1WHz02iQnFfcY">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-unit-md left-unit-md right-unit-md text-on-primary">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest">Voz Directiva</span>
+<p class="font-headline-sm text-headline-sm">"De la investigación de laboratorio al escenario central de la innovación global"</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Proyecto 4: Storytelling ESG & Sostenibilidad -->
+<article class="p-unit-xl lg:p-unit-2xl rounded-3xl bg-surface-container-lowest/90 backdrop-blur-xl shadow-xl transition-all duration-300 hover:shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<div class="lg:col-span-7 flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-unit-xs mb-unit-sm">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-surface-variant text-primary font-label-caps text-label-caps uppercase">Contenidos &amp; Sostenibilidad</span>
+<span class="text-outline font-label-caps text-label-caps uppercase">Consumo Masivo Global</span>
+</div>
+<h3 class="font-headline-lg text-headline-md lg:text-headline-lg text-primary tracking-tight mb-unit-md">
+                  Storytelling ESG &amp; Sostenibilidad
+                </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-unit-md mb-unit-lg">
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-error block mb-unit-2xs">El Reto</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Superar la suspicacia y la percepción general de greenwashing en una multinacional de bienes de consumo con cadenas de suministro extensas.
+                    </p>
+</div>
+<div class="p-unit-md rounded-2xl bg-surface-container-low/70">
+<span class="font-label-caps text-label-caps uppercase text-secondary block mb-unit-2xs">La Estrategia</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                      Serie documental de microformatos, auditorías en terreno publicadas en portal de métricas abiertas y vocería de agricultores en primera persona.
+                    </p>
+</div>
+</div>
+<!-- Impact Metrics Bar -->
+<div class="p-unit-md rounded-2xl bg-primary text-on-primary grid grid-cols-3 gap-unit-sm text-center">
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">Top 1</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Premio Honestidad PR</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">+65%</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Confianza del Consumidor</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-secondary-fixed">8.2M</span>
+<span class="font-label-caps text-[10px] uppercase text-inverse-primary tracking-wider">Visualizaciones Serie</span>
+</div>
+</div>
+</div>
+<div class="mt-unit-lg flex items-center justify-between">
+<button class="inline-flex items-center gap-unit-xs px-unit-lg py-unit-xs rounded-full bg-surface-container-high hover:bg-surface-variant text-primary font-label-md text-label-md transition-colors" onclick="alert('Estudio de caso ESG disponible para descarga.')" type="button">
+<span class="">Ver proyecto</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+<span class="font-label-caps text-label-caps text-outline">Reconocimiento Iberoamericano</span>
+</div>
+</div>
+<!-- Visual Decorative Folio Side -->
+<div class="lg:col-span-5 h-full flex flex-col justify-center">
+<div class="relative w-full h-80 rounded-2xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Lush regenerative agriculture farm field at sunrise, agricultural worker hands examining rich organic soil with dignity, soft warm morning mist, editorial National Geographic visual excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw_GsjXH2Et4FWm5Mx8M67MvmAh9fROG-7YSEU1AFkQELf3zSZtmsWIWc-OQUBEYie59pevjCC9EWHcKGIm6pmyyeocRhxfb01Dbq6fVTojPdDtuMtx5gZmxQsrFI2gboJIClwMBezOT4605aCIGYig-UyUWLEeOBvwbn93PPamh6ReYK3k1ntsIr-DM-VfACoM8WpJlhsdNKOraYg1tZimERwIJZQAAbAE5ZbC9jk3m2uq48pRK8E">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-unit-md left-unit-md right-unit-md text-on-primary">
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed tracking-widest">Narrativa Transparente</span>
+<p class="font-headline-sm text-headline-sm">"Los datos verificados reemplazaron a las promesas publicitarias"</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       6. SECCIÓN "IDEAS QUE CONECTAN" (Insights / Blog optimizado para SEO e IA)
+       ========================================================================= -->
+<section class="w-full py-unit-5xl bg-surface-container-low/50 relative" id="insights">
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-unit-3xl gap-unit-lg">
+<div class="max-w-xl">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">The Executive Brief · Insights</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mt-unit-2xs">
+            Ideas que conectan: Análisis sobre reputación, poder y medios.
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+          Ensayos estratégicos para navegar la complejidad de la opinión pública contemporánea y las nuevas tecnologías.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop">
+<!-- Artículo 1 -->
+<article class="p-unit-xl rounded-3xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-unit-md">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase">IA &amp; Comunicación</span>
+<span class="font-label-caps text-label-caps text-outline">6 min de lectura</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm group-hover:text-secondary transition-colors">
+              Inteligencia Artificial aplicada a la Comunicación Estratégica: Cómo los LLMs redefinen la escucha de audiencias
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Los modelos de lenguaje no solo sintetizan datos: permiten mapear en tiempo real microclimas de polarización y anticipar focos de fricción reputacional antes de que alcancen los medios tradicionales.
+            </p>
+</div>
+<div class="pt-unit-md flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Po Daniela Gil · Octubre 2024</span>
+<a class="inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary group-hover:text-secondary transition-colors" href="#contacto">
+<span class="">Leer análisis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Artículo 2 -->
+<article class="p-unit-xl rounded-3xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-unit-md">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase">Relaciones Públicas</span>
+<span class="font-label-caps text-label-caps text-outline">5 min de lectura</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm group-hover:text-secondary transition-colors">
+              El fin de las relaciones públicas cosméticas: Por qué la autenticidad y los datos gobiernan la reputación actual
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Los comunicados de prensa autocelebratorios han muerto. Las audiencias de hoy exigen métricas auditables, consecuencias de errores admitidos y compromisos respaldados por la junta directiva.
+            </p>
+</div>
+<div class="pt-unit-md flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Por Daniela Gil · Noviembre 2024</span>
+<a class="inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary group-hover:text-secondary transition-colors" href="#contacto">
+<span class="">Leer análisis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Artículo 3 -->
+<article class="p-unit-xl rounded-3xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-unit-md">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-primary-fixed text-on-primary-fixed font-label-caps text-label-caps uppercase">C-Suite Thought Leadership</span>
+<span class="font-label-caps text-label-caps text-outline">7 min de lectura</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm group-hover:text-secondary transition-colors">
+              Construcción de Marca Personal para CEOs: La fórmula entre vulnerabilidad calculada y visión de liderazgo
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              Nadie confía en líderes sin fisuras. Analizamos el arte de mostrar aprendizajes sin exponer debilidades operacionales que inquieten a los mercados e inversionistas.
+            </p>
+</div>
+<div class="pt-unit-md flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Por Daniela Gil Diciembre 2024</span>
+<a class="inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary group-hover:text-secondary transition-colors" href="#contacto">
+<span class="">Leer análisis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Artículo 4 -->
+<article class="p-unit-xl rounded-3xl bg-surface-container-lowest/80 backdrop-blur-md shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-unit-md">
+<span class="px-unit-sm py-unit-2xs rounded-full bg-error-container text-on-error-container font-label-caps text-label-caps uppercase">Gestión de Crisis</span>
+<span class="font-label-caps text-label-caps text-outline">4 min de lectura</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-unit-sm group-hover:text-secondary transition-colors">
+              Protocolo ante la cancelación digital: Primeros 60 minutos decisivos en una crisis mediática
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-unit-lg">
+              La anatomía de una tormenta social: el error de responder desde la emoción, la importancia del silencio táctico inicial y el establecimiento de una única fuente de verdad validada.
+            </p>
+</div>
+<div class="pt-unit-md flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Por Daniela Gil · Enero 2025</span>
+<a class="inline-flex items-center gap-unit-xs font-label-md text-label-md text-primary group-hover:text-secondary transition-colors" href="#contacto">
+<span class="">Leer análisis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       7. SECCIÓN "HABLEMOS" (Contacto y Conversión)
+       ========================================================================= -->
+<section class="w-full py-unit-5xl relative" id="contacto">
+<div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop">
+<div class="p-unit-xl lg:p-unit-3xl rounded-3xl bg-primary text-on-primary relative overflow-hidden shadow-2xl">
+<!-- Ambient atmospheric glow inside dark box -->
+<div class="pointer-events-none absolute -top-40 -right-40 w-96 h-96 bg-secondary/30 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute -bottom-40 -left-40 w-96 h-96 bg-tertiary-fixed-dim/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Left Column: Context and Direct Channels -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-unit-xs px-unit-sm py-unit-2xs rounded-full bg-primary-container text-secondary-fixed font-label-caps text-label-caps uppercase mb-unit-md">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="">Asesoría Privada &amp; Confidencial</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary tracking-tight mb-unit-md">
+                Hablemos de ideas que pueden convertirse en impacto.
+              </h2>
+<p class="font-body-md text-body-md text-inverse-primary max-w-md mb-unit-xl">
+                Sea para una asesoría integral de comunicación, la gestión de un momento crítico o el desarrollo de su marca directiva, abramos un canal de conversación de alto nivel.
+              </p>
+</div>
+<div class="space-y-unit-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed block mb-unit-2xs">Canales Directos</span>
+<a class="font-headline-sm text-headline-sm text-on-primary hover:text-secondary-fixed transition-colors block" href="mailto:contacto@valentinaserna.com">contacto@danielagilga.com</a>
+<span class="font-body-sm text-body-sm text-inverse-primary">Respuesta estimada: menor a 24 horas hábiles</span>
+</div>
+<!-- Social links -->
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary-fixed block mb-unit-xs">Ecosistema Digital</span>
+<div class="flex flex-wrap items-center gap-unit-sm">
+<a class="px-unit-md py-unit-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-unit-2xs" href="https://www.linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span class="">LinkedIn</span>
+</a>
+<a class="px-unit-md py-unit-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-unit-2xs" href="https://substack.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">mark_email_read</span>
+<span class="">Substack</span>
+</a>
+<a class="px-unit-md py-unit-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-unit-2xs" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span class="">X / Twitter</span>
+</a>
+<a class="px-unit-md py-unit-xs rounded-full bg-primary-container text-on-primary font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-all flex items-center gap-unit-2xs" href="https://spotify.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">podcasts</span>
+<span class="">Podcast</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Form -->
+<div class="lg:col-span-7">
+<div class="p-unit-lg lg:p-unit-xl rounded-2xl bg-surface-container-lowest text-on-surface shadow-xl">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-unit-xs">Inicie la conversación</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-lg">
+                Complete el siguiente formulario confidencial para agendar una sesión exploratoria de 30 minutos.
+              </p>
+<form class="space-y-unit-md" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-unit-md">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-unit-2xs" for="fullName">Nombre completo *</label>
+<input class="w-full h-12 px-unit-md rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="fullName" placeholder="Ej. Mariana Morales" required="" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-unit-2xs" for="corporateEmail">Correo electrónico corporativo *</label>
+<input class="w-full h-12 px-unit-md rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="corporateEmail" placeholder="mariana@empresa.com" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-unit-md">
+<div>
+<label class="block font-label-md text-label-md text-primary mb-unit-2xs" for="companyName">Empresa o Proyecto</label>
+<input class="w-full h-12 px-unit-md rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="companyName" placeholder="Organización o institución" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-unit-2xs" for="contactReason">Motivo de contacto *</label>
+<select class="w-full h-12 px-unit-md rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="contactReason" required="">
+<option value="">Seleccione una opción</option>
+<option value="asesoria-integral">Asesoría integral de comunicación</option>
+<option value="crisis">Gestión de crisis reputacional</option>
+<option value="marca-personal">Marca personal directiva / C-Suite</option>
+<option value="pr-medios">PR y relacionamiento de medios</option>
+<option value="taller">Taller ejecutivo / Conferencia</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-primary mb-unit-2xs" for="messageBody">Mensaje o contexto del desafío *</label>
+<textarea class="w-full p-unit-md rounded-xl bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary transition-all resize-none" id="messageBody" placeholder="Comparta brevemente los objetivos, el calendario previsto y el alcance deseado..." required="" rows="4"></textarea>
+</div>
+<div class="flex items-center gap-unit-xs">
+<input class="w-4 h-4 rounded text-primary focus:ring-secondary" id="privacyConsent" required="" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="privacyConsent">
+                    He leído y acepto la política de confidencialidad y tratamiento ético de datos.
+                  </label>
+</div>
+<button class="w-full h-12 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center justify-center gap-unit-xs shadow-md" type="submit">
+<span class="">Conversemos</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+<!-- Success Notification Alert -->
+<div class="hidden mt-unit-md p-unit-md rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center gap-unit-sm" id="formSuccess">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span class="font-body-sm text-body-sm font-semibold">Gracias por contactarme. Su mensaje ha sido recibido con estricta confidencialidad. Le responderé en las próximas 24 horas.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       INLINE MICRO-INTERACTION SCRIPT
+       ========================================================================= -->
+<script>
+    // Smooth Anchor Scroll Navigation Helper
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const targetElem = document.querySelector(targetId);
+          if (targetElem) {
+            e.preventDefault();
+            targetElem.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        }
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low pt-unit-4xl pb-unit-2xl shadow-[0_-1px_10px_rgba(0,0,0,0.02)]" itemscope="" itemtype="https://schema.org/ProfessionalService"><div class="max-w-max-width-content mx-auto px-margin-mobile lg:px-gutter-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-desktop mb-unit-3xl"><div class="lg:col-span-4"><div class="mb-unit-sm"><span class="font-headline-md text-headline-md text-primary" itemprop="name">Daniela Gil</span><p class="font-label-caps text-label-caps uppercase text-secondary tracking-widest mt-unit-2xs">Executive Communications &amp; PR Advisory</p></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-unit-lg" itemprop="description">Asesoría de alta dirección en posicionamiento de reputación, narrativa ejecutiva y gestión de crisis para líderes globales y corporaciones de alto impacto.</p><div class="flex items-center gap-unit-sm font-label-md text-label-md text-on-surface-variant"><span class="material-symbols-outlined text-[18px] text-secondary">location_on</span><span itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress" class=""><span itemprop="addressLocality" class="">Cali</span>&nbsp;· <span itemprop="addressRegion" class="">Madrid</span> · <span itemprop="addressCountry" class="">Global</span></span></div></div><div class="lg:col-span-2"><h4 class="font-label-caps text-label-caps uppercase text-primary mb-unit-md tracking-wider">Navegación</h4><ul class="space-y-unit-xs font-body-sm text-body-sm"><li class="py-unit-2xs"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="inicio" href="#">Inicio</a></li><li class="py-unit-2xs"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="sobre-mi" href="#">Sobre mí</a></li><li class="py-unit-2xs"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="servicios" href="#">Servicios</a></li><li class="py-unit-2xs"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="metodologia" href="#">Metodología</a></li><li class="py-unit-2xs"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="proyectos" href="#">Proyectos</a></li><li class="py-unit-2xs"><a class="text-on-surface-variant hover:text-primary transition-colors" data-path="insights" href="#">Insights</a></li></ul></div><div class="lg:col-span-3"><h4 class="font-label-caps text-label-caps uppercase text-primary mb-unit-md tracking-wider">Contacto &amp; Prensa</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-sm">Inquiries corporativos y apariciones en medios de comunicación:</p><a class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors block mb-unit-md" href="mailto:contacto@valentinaserna.com" itemprop="email">contacto@danielagilga.com</a><div class="flex items-center gap-unit-md"><a aria-label="LinkedIn" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-all" href="#"><span class="material-symbols-outlined text-[18px]">link</span></a><a aria-label="Press Media Kit" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-all" href="#"><span class="material-symbols-outlined text-[18px]">newspaper</span></a><a aria-label="Podcasts and Keynotes" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-all" href="#"><span class="material-symbols-outlined text-[18px]">podcasts</span></a></div></div><div class="lg:col-span-3"><h4 class="font-label-caps text-label-caps uppercase text-primary mb-unit-md tracking-wider">The Executive Brief</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-unit-sm">Pensamiento estratégico quincenal sobre influencia, reputación y poder público.</p><form class="flex flex-col gap-unit-xs"><input class="h-12 px-unit-md rounded-xl bg-surface-container-lowest text-on-surface text-body-sm placeholder:text-outline focus:outline-none ring-1 ring-outline-variant focus:ring-2 focus:ring-secondary transition-all" placeholder="Su correo institucional" required="" type="email"><button class="h-12 px-unit-md rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-all text-center flex items-center justify-center gap-unit-xs" type="submit"><span class="">Suscribirse</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></button></form></div></div><div class="pt-unit-xl flex flex-col md:flex-row items-center justify-between gap-unit-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-unit-xs"><span class="">© 2025 Daniela Gil. Estrategia &amp; PR. Todos los derechos reservados.</span></div><div class="flex items-center gap-unit-lg"><a class="hover:text-primary transition-colors" data-path="privacidad" href="#">Privacidad</a><a class="hover:text-primary transition-colors" data-path="aviso-legal" href="#">Aviso Legal</a><a class="hover:text-primary transition-colors" data-path="etica-editorial" href="#">Código de Ética</a></div></div></div></footer>
+
+
+
+
+
+
+
+</body></html>
